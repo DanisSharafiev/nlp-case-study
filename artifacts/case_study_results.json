@@ -1,0 +1,182 @@
+{
+  "n_documents": 1460,
+  "n_blocks": 1973,
+  "n_queries": 156,
+  "n_original_queries": 112,
+  "n_synthetic_full_queries": 80,
+  "n_original_scored_queries": 76,
+  "n_synthetic_scored_queries": 80,
+  "n_val_queries": 39,
+  "n_test_queries": 117,
+  "alpha": 0.30000000000000004,
+  "fallback_threshold": 0.25,
+  "overall": [
+    {
+      "method": "hybrid_interleave",
+      "block_mrr": 0.7956956917778137,
+      "doc_mrr": 0.8057853614871159,
+      "doc_hit@10": 0.9743589743589743
+    },
+    {
+      "method": "bert",
+      "block_mrr": 0.7589568134386426,
+      "doc_mrr": 0.7952386469373428,
+      "doc_hit@10": 0.9487179487179487
+    },
+    {
+      "method": "hybrid_weighted",
+      "block_mrr": 0.781128907468181,
+      "doc_mrr": 0.7896555878161229,
+      "doc_hit@10": 0.9572649572649573
+    },
+    {
+      "method": "tfidf",
+      "block_mrr": 0.772041088066729,
+      "doc_mrr": 0.7733222060465651,
+      "doc_hit@10": 0.9230769230769231
+    },
+    {
+      "method": "hybrid_fallback",
+      "block_mrr": 0.772041088066729,
+      "doc_mrr": 0.7733222060465651,
+      "doc_hit@10": 0.9230769230769231
+    }
+  ],
+  "by_overlap_group": [
+    {
+      "overlap_group": "full",
+      "n_pairs": 62,
+      "n_queries": 62,
+      "method": "tfidf",
+      "block_mrr": 0.9592933947772657,
+      "doc_mrr": 0.9592933947772657,
+      "doc_hit@10": 1.0
+    },
+    {
+      "overlap_group": "full",
+      "n_pairs": 62,
+      "n_queries": 62,
+      "method": "hybrid_fallback",
+      "block_mrr": 0.9592933947772657,
+      "doc_mrr": 0.9592933947772657,
+      "doc_hit@10": 1.0
+    },
+    {
+      "overlap_group": "full",
+      "n_pairs": 62,
+      "n_queries": 62,
+      "method": "hybrid_weighted",
+      "block_mrr": 0.9561827956989247,
+      "doc_mrr": 0.956221198156682,
+      "doc_hit@10": 0.9838709677419355
+    },
+    {
+      "overlap_group": "full",
+      "n_pairs": 62,
+      "n_queries": 62,
+      "method": "hybrid_interleave",
+      "block_mrr": 0.9533912324234906,
+      "doc_mrr": 0.9533912324234906,
+      "doc_hit@10": 0.9838709677419355
+    },
+    {
+      "overlap_group": "full",
+      "n_pairs": 62,
+      "n_queries": 62,
+      "method": "bert",
+      "block_mrr": 0.828321473622644,
+      "doc_mrr": 0.8328818869650375,
+      "doc_hit@10": 0.967741935483871
+    },
+    {
+      "overlap_group": "none",
+      "n_pairs": 318,
+      "n_queries": 36,
+      "method": "bert",
+      "block_mrr": 0.019639422845230278,
+      "doc_mrr": 0.020900495286513845,
+      "doc_hit@10": 0.027777777777777776
+    },
+    {
+      "overlap_group": "none",
+      "n_pairs": 318,
+      "n_queries": 36,
+      "method": "hybrid_interleave",
+      "block_mrr": 0.011145208304696083,
+      "doc_mrr": 0.011905312046685528,
+      "doc_hit@10": 0.0
+    },
+    {
+      "overlap_group": "none",
+      "n_pairs": 318,
+      "n_queries": 36,
+      "method": "hybrid_weighted",
+      "block_mrr": 0.006613812849246915,
+      "doc_mrr": 0.007275719880342237,
+      "doc_hit@10": 0.0
+    },
+    {
+      "overlap_group": "none",
+      "n_pairs": 318,
+      "n_queries": 36,
+      "method": "tfidf",
+      "block_mrr": 0.0009541948154301642,
+      "doc_mrr": 0.001247855910615751,
+      "doc_hit@10": 0.0
+    },
+    {
+      "overlap_group": "none",
+      "n_pairs": 318,
+      "n_queries": 36,
+      "method": "hybrid_fallback",
+      "block_mrr": 0.0009541948154301642,
+      "doc_mrr": 0.001247855910615751,
+      "doc_hit@10": 0.0
+    },
+    {
+      "overlap_group": "partial",
+      "n_pairs": 2011,
+      "n_queries": 57,
+      "method": "bert",
+      "block_mrr": 0.6589820434447454,
+      "doc_mrr": 0.7285099043651223,
+      "doc_hit@10": 0.9122807017543859
+    },
+    {
+      "overlap_group": "partial",
+      "n_pairs": 2011,
+      "n_queries": 57,
+      "method": "hybrid_interleave",
+      "block_mrr": 0.6011063614854537,
+      "doc_mrr": 0.6218167361519162,
+      "doc_hit@10": 0.9473684210526315
+    },
+    {
+      "overlap_group": "partial",
+      "n_pairs": 2011,
+      "n_queries": 57,
+      "method": "hybrid_weighted",
+      "block_mrr": 0.5682821433995995,
+      "doc_mrr": 0.5857842767453751,
+      "doc_hit@10": 0.9122807017543859
+    },
+    {
+      "overlap_group": "partial",
+      "n_pairs": 2011,
+      "n_queries": 57,
+      "method": "tfidf",
+      "block_mrr": 0.5496281983124088,
+      "doc_mrr": 0.5522578615341773,
+      "doc_hit@10": 0.8421052631578947
+    },
+    {
+      "overlap_group": "partial",
+      "n_pairs": 2011,
+      "n_queries": 57,
+      "method": "hybrid_fallback",
+      "block_mrr": 0.5496281983124088,
+      "doc_mrr": 0.5522578615341773,
+      "doc_hit@10": 0.8421052631578947
+    }
+  ]
+}
