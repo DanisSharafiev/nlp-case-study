@@ -5,6 +5,12 @@
 CISI experiment with TF-IDF, Sentence-BERT, and a few simple hybrids.
 Search is done on text blocks. Document scores come from block scores.
 
+## Poster
+
+[Poster PDF](Poster.pdf)
+
+![Project poster](Poster.jpg)
+
 ## Run
 
 Run commands from the project root.
